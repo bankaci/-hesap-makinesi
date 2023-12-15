@@ -1,0 +1,26 @@
+function hesapMakinesi () {
+
+    let sayi = parseFloat(prompt( "bir sayi giriniz" ))
+    let operator = prompt( "toplama + , çıkarma - , çarpma * , bölme /  " )
+    let sayi1 = parseFloat(prompt( "bir sayı giriniz" ))
+    
+
+    let sonuc;
+    if ( operator === "+") { 
+      sonuc = sayi + sayi1 
+    
+    } 
+    else if ( operator === "-" ) { 
+      sonuc = sayi - sayi1  }
+    else if ( operator === "*" ) { sonuc = sayi * sayi1  
+    }
+    else if ( operator === "/" ) {
+         if ( sayi1 !== 0 ) {  sonuc =  sayi / sayi1; }
+         else { alert(" sayıyı 0 ' a bölemezsiniz " );}}
+    else { alert( " geçersiz " )}
+    
+    alert(sonuc)      ;         
+    
+  }  
+hesapMakinesi();
+  
